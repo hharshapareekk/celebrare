@@ -1,16 +1,5 @@
-# celebrare__task
+# celebrare task
 
-A new Flutter project.
+In this Flutter task, I am focused on crafting a user-friendly interface for text editing within a rectangle. The objective is to ensure ease of interaction for users. The interface includes accessible options for font type, size, and color adjustments, allowing users to customize their text effortlessly. Additionally, a feature to add more text boxes is provided for expanded content. The implementation of undo and redo functionalities enables users to rectify mistakes seamlessly. The developer's aim is to equip users with comprehensive tools for precise and effortless text editing.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 18/03/2024 05:56
