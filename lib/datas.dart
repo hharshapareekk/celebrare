@@ -1,13 +1,13 @@
 final List<String> fonts = [
+  'Agbalumo',
   'Arizonia',
-  'Calibre',
-  'Georgia',
+  'Grand Hotel',
   'Lobster',
-  'Open Sans',
-  'Oswald',
+  'Pirata'
   'Roboto',
-  'Times New Roman'
+  'Romanesco',
+  'Yatra One'
   
-  
+
 ];
 String? selectedValue;

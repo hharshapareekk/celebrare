@@ -13,6 +13,7 @@ class _EditingPageState extends State<EditingPage> {
   String editingText = ''; // Initialize editingText here
   double fontSize = 16.0; // Initial font size
   String fontFamily = 'Arizonia';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,18 +55,21 @@ class _EditingPageState extends State<EditingPage> {
                   child: TextFormField(
                     textAlign: TextAlign.center,
                     initialValue: editingText,
+                    style: TextStyle(
+                      fontSize: fontSize,
+                      fontFamily: fontFamily, // Set font family dynamically
+                    ),
                     decoration: InputDecoration(
                       hintText: 'Enter Your Text Here',
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.all(8.0), // Add padding for better visibility
-                      hintStyle: TextStyle(fontSize: fontSize,fontFamily: fontFamily), // Set font size
+                      hintStyle: TextStyle(fontSize: fontSize), // Set default font size
                     ),
                     onChanged: (String value) {
                       setState(() {
                         editingText = value;
                       });
                     },
-                    style: TextStyle(fontSize: fontSize), // Set font size
                   ),
                 ),
               ),
@@ -110,8 +114,7 @@ class _EditingPageState extends State<EditingPage> {
                           .toList(),
                       onChanged: (String? value) {
                         setState(() {
-                          selectedValue = value;
-                          fontFamily = 'Oswald';
+                          fontFamily = value!;
                         });
                       },
                     ),
@@ -139,11 +142,9 @@ class _EditingPageState extends State<EditingPage> {
                             icon: Icon(Icons.remove),
                             onPressed: () {
                               setState(() {
-                                if(fontSize>=2)
-                                {
+                                if (fontSize >= 2) {
                                   fontSize -= 2;
                                 }
-                                 // Decrease font size by 2
                               });
                             },
                           ),

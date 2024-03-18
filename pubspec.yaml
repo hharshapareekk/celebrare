@@ -3,7 +3,6 @@ description: "A new Flutter project."
 
 publish_to: 'none'
 
-
 version: 1.0.0+1
 
 environment:
@@ -13,24 +12,37 @@ dependencies:
   flutter:
     sdk: flutter
   dropdown_button2: ^2.3.9
-
- 
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
- 
   flutter_lints: ^3.0.0
-
-
-
 
 flutter:
   uses-material-design: true
   fonts:
-    - family: fonts/Arizonia-Regular.ttf
-    - family: fonts/Oswald-VariableFont.ttf
-
- 
+    - family: Agbalumo
+      fonts:
+        - asset: assets/fonts/Agbalumo-Regular.ttf
+    - family: Arizonia
+      fonts:
+        - asset: assets/fonts/Arizonia-Regular.ttf
+    - family: Grand Hotel
+      fonts:
+        - asset: assets/fonts/GrandHotel-Regular.ttf
+    - family: Lobster
+      fonts:
+        - asset: assets/fonts/Lobster-Regular.ttf
+    - family: Pirata
+      fonts:
+        - asset: assets/fonts/PirataOne-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Romanesco
+      fonts:
+        - asset: assets/fonts/Romanesco-Regular.ttf
+    - family: 'Yatra One'
+      fonts:
+        - asset: assets/fonts/YatraOne-Regular.ttf
